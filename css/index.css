@@ -376,8 +376,8 @@ font-size: 2.6rem;
             margin-bottom: 20px;
         }
         .intro button{
-            width: 100%;
-            
+            width: 300px;
+            margin-left: -15%;
         }
    .content .top-content {
        display: flex;
@@ -396,4 +396,27 @@ font-size: 2.6rem;
     .bottom-content {
         text-align: center;
     }
+    .bottom-content button {
+        width: 300px;
+    }
+
+
+    .mission {
+        display: flex;
+        justify-content: center;
+    }
+    .mission h2{
+        text-align: center;
+    }
+    .team img{
+        width: 20%;
+    }
+    .team-intro {
+        display: flex;
+        align-items: center;
+    }
+
+    /* .team-text .team-groups p{
+        text-align: left;
+    } */
 }

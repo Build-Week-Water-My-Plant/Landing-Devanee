@@ -186,6 +186,9 @@ header nav a {
   color: black;
   width: 100%;
 }
+header nav a:hover{
+    color: lightskyblue;
+}
 .intro {
   display: flex;
   align-items: center;
@@ -202,9 +205,15 @@ header nav a {
   width: 250px;
   font-size: 2rem;
 }
+.intro {
+    padding-bottom: 5%;
+}
 .intro h1 {
   font-size: 4rem;
-  padding: 10%;
+  padding: 15%;
+}
+.top-content-text h3{
+font-size: 2.6rem;
 }
 .intro img {
   width: 40%;
@@ -217,16 +226,24 @@ header nav a {
 }
 .content .content-head {
   text-align: center;
+  padding: 10px 0 20px 0;
 }
 .content .top-content {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  border-bottom: 1px solid lightgray;
 }
 .content .top-content-text {
   padding: 10px;
   margin-bottom: 15px;
 }
+.top-content-text i{
+    color: green;
+    padding: 10px;
+
+}
+
 .main-content h2 {
   text-align: center;
   padding: 10px;
@@ -265,8 +282,31 @@ header nav a {
 
 
 /*About Page*/
+.mission div{
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+    margin: 20px;
+}
+.mission {
+    padding-top: 20px;
+    line-height: 1.5;
+}
 .team {
+    padding-top: 20px;
     text-align: center;
+}
+.team-intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-intro h2{
+    font-size: 3.6rem;
+}
+.team img{
+    width: 12%;
 }
 .team h2{
     padding: 25px;
@@ -278,8 +318,22 @@ header nav a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 20px 30px 20px 30px;
+    padding: 0 20% 2% 20%;
 }
-.team h3{
-    border: 1px solid lightgrey;
+.team-text h3{
+    border-top: 1px solid #DCDCDC;
+    padding: 10px;
 }
+.team h2{
+   color: lightslategrey;
+}
+.team-text a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+.team-text a:hover{
+    color: lightseagreen;
+}
+
+/* Media Styles */

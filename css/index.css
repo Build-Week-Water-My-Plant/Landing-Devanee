@@ -171,7 +171,6 @@ header {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   padding: 25px;
 }
@@ -181,10 +180,17 @@ header h1 {
   margin-bottom: 20px;
   letter-spacing: 3px;
 }
+header nav {
+   align-items: stretch;
+}
 header nav a {
   text-decoration: none;
   color: black;
   width: 100%;
+  letter-spacing: 2px;
+}
+header i {
+    color: green;
 }
 header nav a:hover{
     color: lightskyblue;
@@ -197,6 +203,7 @@ header nav a:hover{
 .intro .intro-text {
   width: 50%;
   text-align: center;
+  line-height: 1.2;
 }
 .sign-up-now {
   background: #b2ffff;
@@ -223,6 +230,8 @@ font-size: 2.6rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  border-top: 1px solid #DCDCDC;
+  padding-top: 20px;
 }
 .content .content-head {
   text-align: center;
@@ -232,7 +241,8 @@ font-size: 2.6rem;
   display: flex;
   justify-content: space-around;
   width: 100%;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #DCDCDC;
+  padding-bottom: 15px;
 }
 .content .top-content-text {
   padding: 10px;
@@ -241,7 +251,7 @@ font-size: 2.6rem;
 .top-content-text i{
     color: green;
     padding: 10px;
-
+    font-size: 3rem;
 }
 
 .main-content h2 {
@@ -261,12 +271,13 @@ font-size: 2.6rem;
 .main-content img {
   object-fit: contain;
   width: 40%;
+  padding-top: 10px;
 }
 .bottom-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #DCDCDC;
   padding: 10px;
 }
 .bottom-content h2 {
@@ -280,7 +291,12 @@ font-size: 2.6rem;
   font-size: 2.2rem;
 }
 
-
+.footer {
+    background: #D6FBBC;
+    height: 60px;
+    border-radius: 10px;
+    opacity: 0.7;
+}
 /*About Page*/
 .mission div{
     display: flex; 
@@ -337,3 +353,47 @@ font-size: 2.6rem;
 }
 
 /* Media Styles */
+@media (max-width: 500px){
+
+    body {
+        width: 100%;
+    }
+   .intro {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+   }
+        .intro img {
+            width: 70%;
+            padding: 0;
+        }
+        .intro-text{
+            align-items: center;
+        }
+        .intro h1 {
+            font-size: 2.6rem;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        .intro button{
+            width: 100%;
+            
+        }
+   .content .top-content {
+       display: flex;
+       flex-direction: column;
+   }
+    .main-content .customers {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content .customers .customers-text{
+        font-size: 1rem;
+    }
+        .customers img{
+            width: 30%;
+        }
+    .bottom-content {
+        text-align: center;
+    }
+}

@@ -196,6 +196,11 @@ header nav a:hover{
     color: lightskyblue;
 }
 .intro {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.intro-text {
   display: flex;
   align-items: center;
   justify-items: center;
@@ -206,19 +211,50 @@ header nav a:hover{
   line-height: 1.2;
 }
 .sign-up-now {
-  background: #b2ffff;
+  background:#1B3734;
+  color: whitesmoke;
   padding: 20px;
   border-radius: 15px;
   width: 250px;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  opacity: .9;
 }
-.intro {
+.box {
+    position: relative;
+}
+.box .text {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 15%;
+    text-align: right;
+    width: 70%;
+}
+.box img {
+    width: 100%;
+}
+.box .text {
+    width: 30%;
+    /* text-align: center; */
+    line-height: 1.2;
+    font-size: 3.5rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 10%;
+    padding: 20px;
+  }
+/* .intro {
     padding-bottom: 5%;
 }
 .intro h1 {
   font-size: 4rem;
   padding: 15%;
-}
+} */
 .top-content-text h3{
 font-size: 2.6rem;
 }
@@ -230,7 +266,6 @@ font-size: 2.6rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border-top: 1px solid #DCDCDC;
   padding-top: 20px;
 }
 .content .content-head {
@@ -325,6 +360,7 @@ font-size: 2.6rem;
     width: 12%;
 }
 .team h2{
+    color: lightslategrey;
     padding: 25px;
 }
 .team h3{
@@ -332,25 +368,37 @@ font-size: 2.6rem;
 }
 .team .team-groups{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    padding: 0 20% 2% 20%;
+    padding: 0 10% 2% 5%;
+}
+.team-text {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #DCDCDC;
 }
 .team-text h3{
-    border-top: 1px solid #DCDCDC;
     padding: 10px;
 }
-.team h2{
-   color: lightslategrey;
+.team-text p {
+    text-align: left;
 }
 .team-text a{
     text-decoration: none;
     color: black;
     font-size: 2rem;
+    padding: 10px 0 10px 0;
 }
 .team-text a:hover{
     color: lightseagreen;
 }
+.team-groups img{
+    /* border-radius: 50%; */
+    width: 15%;
+    height: 120px;
+    border: 1px solid #DCDCDC;
+}
+
 
 /* Media Styles */
 @media (max-width: 500px){
@@ -358,30 +406,28 @@ font-size: 2.6rem;
     body {
         width: 100%;
     }
-   .intro {
-       display: flex;
-       flex-direction: column;
-       width: 100%;
-   }
-        .intro img {
-            width: 70%;
-            padding: 0;
+    .box .text {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: -8%;
+        margin-right: 10px;
+        width: 35%;
+    }
+        .box .text button {
+            margin-top: 50%;
+            width: 380px;
         }
-        .intro-text{
-            align-items: center;
-        }
-        .intro h1 {
-            font-size: 2.6rem;
-            padding: 0;
-            margin-bottom: 20px;
-        }
-        .intro button{
-            width: 300px;
-            margin-left: -15%;
-        }
+    .content {
+
+        padding: 20% 5% 0 5%;
+    }
    .content .top-content {
        display: flex;
        flex-direction: column;
+
+   }
+   .main-content {
+       padding: 0 20px 0 20px;
    }
     .main-content .customers {
         display: flex;
@@ -395,6 +441,7 @@ font-size: 2.6rem;
         }
     .bottom-content {
         text-align: center;
+        padding: 0 20px 0 20px;
     }
     .bottom-content button {
         width: 300px;
@@ -413,7 +460,10 @@ font-size: 2.6rem;
     }
     .team-intro {
         display: flex;
-        align-items: center;
+        align-items: baseline
+    }
+    .team-groups img{
+        width: 40%; 
     }
 
     /* .team-text .team-groups p{

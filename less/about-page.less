@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     align-content: space-between;
-    margin: 20px;
+    margin: 20px 30px 20px 30px;
     border-top: 1px solid #DCDCDC;
 }
 .mission {
@@ -37,15 +37,16 @@
 .team h3{
     text-align: center;
 }
-.team .team-groups{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 0 2% 0 5%;
-}
-.team-text {
+.team .team-text .team-groups{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    justify-items: space-between;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+.team-text {
     border-top: 1px solid #DCDCDC;
 }
 .team-text h3{
@@ -59,16 +60,14 @@
     color: black;
     font-size: 2rem;
     font-weight: bolder;
-    padding: 10px 0 10px 0;
 }
 .team-text a:hover{
     color: lightseagreen;
 }
 .team-groups img{
-    padding-top: 10px;
     width: 15%;
-    height: 120px;
-
+    height: 130px;
+    margin: 20px;
 }
 
 /* About page mobile */
@@ -88,18 +87,17 @@
 .team-intro {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #DCDCDC;
+    // border-bottom: 1px solid #DCDCDC;
 }
 .team-text {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 0 auto;
 }
-    .team-text{
-        border-top: none;
-    }
+   
     .team-text .team-groups{
         display: flex;
         flex-wrap: wrap;
@@ -108,17 +106,18 @@
     }
     .team .team-text h3{
         text-align: center;
+
     }
     .team-groups img{
         width: 35%;
         height: 150px;
         padding: 20px 10px 20px 0;
     }
-    .team-text .team-groups p{
-        border-bottom: 1px solid #DCDCDC;
-        padding-bottom: 20px;
+    // .team-text .team-groups p{
+    //     border-bottom: 1px solid #DCDCDC;
+    //     padding-bottom: 20px;
       
-    }
+    // }
 
 }
 

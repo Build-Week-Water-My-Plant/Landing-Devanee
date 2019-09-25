@@ -474,7 +474,7 @@ header nav a:hover {
   flex-direction: column;
   align-items: center;
   align-content: space-between;
-  margin: 20px;
+  margin: 20px 30px 20px 30px;
   border-top: 1px solid #DCDCDC;
 }
 .mission {
@@ -505,15 +505,16 @@ header nav a:hover {
 .team h3 {
   text-align: center;
 }
-.team .team-groups {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 0 2% 0 5%;
-}
-.team-text {
+.team .team-text .team-groups {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  justify-items: space-between;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+}
+.team-text {
   border-top: 1px solid #DCDCDC;
 }
 .team-text h3 {
@@ -527,15 +528,14 @@ header nav a:hover {
   color: black;
   font-size: 2rem;
   font-weight: bolder;
-  padding: 10px 0 10px 0;
 }
 .team-text a:hover {
   color: lightseagreen;
 }
 .team-groups img {
-  padding-top: 10px;
   width: 15%;
-  height: 120px;
+  height: 130px;
+  margin: 20px;
 }
 /* About page mobile */
 @media (max-width: 500px) {
@@ -553,17 +553,14 @@ header nav a:hover {
   .team-intro {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #DCDCDC;
   }
   .team-text {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin-left: 10px;
-  }
-  .team-text {
-    border-top: none;
+    margin-left: 0 auto;
   }
   .team-text .team-groups {
     display: flex;
@@ -578,9 +575,5 @@ header nav a:hover {
     width: 35%;
     height: 150px;
     padding: 20px 10px 20px 0;
-  }
-  .team-text .team-groups p {
-    border-bottom: 1px solid #DCDCDC;
-    padding-bottom: 20px;
   }
 }

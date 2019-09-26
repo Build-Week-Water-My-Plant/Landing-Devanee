@@ -349,8 +349,12 @@ header nav a:hover {
     width: 35%;
   }
   .box button {
-    width: 300px;
+    width: 375px;
     margin-left: 0;
+    margin-right: 5%;
+  }
+  .content .content-head{
+    margin-top: 30px;
   }
   .content {
     padding: 2% 5% 0 5%;

@@ -211,12 +211,12 @@ header nav a:hover {
   text-align: center;
   line-height: 1.2;
 }
-.sign-up-now {
+.box button {
   background: #1B3734;
   color: whitesmoke;
   padding: 20px;
   border-radius: 15px;
-  width: 250px;
+  width: 260px;
   font-size: 1.8rem;
   margin-top: 20px;
   letter-spacing: 2px;
@@ -311,7 +311,7 @@ header nav a:hover {
 .bottom-content h2 {
   margin: 20px 0 25px 0;
 }
-.try-it-free {
+.bottom-content button {
   background: #b2ffff;
   padding: 20px;
   width: 250px;
@@ -349,8 +349,9 @@ header nav a:hover {
     width: 35%;
   }
   .box .text button {
-    margin-top: 50%;
+    margin-top: 16%;
     width: 380px;
+    margin-right: 10%;
   }
   .content {
     padding: 20% 5% 0 5%;
